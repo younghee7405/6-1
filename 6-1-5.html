@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .wrap{
+            width: 90%;
+            max-width: 960px;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid black;
+        }
+
+        .wrap div{
+            width: 31.25%;
+            /* 300 / 960 */
+            display: inline-block;
+        }
+        .wrap div:first-child{
+            background-color: red;
+            padding: 50px 5.203333333%;
+            /* 50/960 */
+
+        }
+        .wrap div:first-child + div{
+            background: blue;
+            padding: 130px 13.541666666% ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
